@@ -11,7 +11,9 @@ const Cards = () => {
             <div className="card-body text-center">
               <h4>Camas</h4>
               <p>
-              Descubre comodidad y estilo para tu mascota con nuestras camitas. Variedad de tamaños y estilos para garantizar el descanso perfecto.
+                Descubre comodidad y estilo para tu mascota con nuestras
+                camitas. Variedad de tamaños y estilos para garantizar el
+                descanso perfecto.
               </p>
             </div>
           </div>
@@ -22,7 +24,9 @@ const Cards = () => {
             <div className="card-body text-center">
               <h4>Platos</h4>
               <p>
-              Optimiza las comidas de tu mascota con nuestros platos funcionales y elegantes. Diseños duraderos que combinan estilo y utilidad.
+                Optimiza las comidas de tu mascota con nuestros platos
+                funcionales y elegantes. Diseños duraderos que combinan estilo y
+                utilidad.
               </p>
             </div>
           </div>
