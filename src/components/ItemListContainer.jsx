@@ -3,6 +3,7 @@ import ItemCount from "./ItemCount";
 import arrayProductos from "./json/productos.json";
 import ItemList from "./ItemList";
 import { useEffect } from "react";
+import ItemDetailContainer from "./ItemDetailContainer";
 
 const ItemListContainer = () => {
   const [items, setItems] = useState([]);
@@ -23,6 +24,7 @@ const ItemListContainer = () => {
     <>
       <ItemList items={items} />
       <ItemCount stock={10} />
+      <ItemDetailContainer/>
     </>
   );
 };
