@@ -3,13 +3,14 @@ import Carousel from "./components/Carousel";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import ItemListContainer from "./components/ItemListContainer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
     <>
       <Header />
       <Carousel />
-      <ItemListContainer mensaje={"Error: No se puede cargar la página. Por favor, inténtalo de nuevo más tarde."}/>
+      <ItemListContainer />
       <Cards />
       <Footer />
     </>
