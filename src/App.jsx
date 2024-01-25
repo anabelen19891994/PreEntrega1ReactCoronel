@@ -3,14 +3,13 @@ import Carousel from "./components/Carousel";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import ItemListContainer from "./components/ItemListContainer";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
     <>
       <Header />
       <Carousel />
-      <ItemListContainer />
+      <ItemListContainer titulo={"🚨 Atención 🚨"} mensaje={"❤️ Estamos actualizando el Sitio Web. Regresamos en unos minutos. ❤️"}/>
       <Cards />
       <Footer />
     </>
