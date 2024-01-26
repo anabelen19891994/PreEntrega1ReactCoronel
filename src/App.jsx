@@ -1,18 +1,25 @@
 import Cards from "./components/Cards";
-import Carousel from "./components/Carousel";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import ItemDetailContainer from "./components/ItemDetailContainer";
 import ItemListContainer from "./components/ItemListContainer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
-    <>
-      <Header />
-      <Carousel />
-      <ItemListContainer titulo={"🚨 Atención 🚨"} mensaje={"❤️ Estamos actualizando el Sitio Web. Regresamos en unos minutos. ❤️"}/>
-      <Cards />
-      <Footer />
-    </>
+    <BrowserRouter>
+    <Header />
+
+    <ItemListContainer />
+    <Routes>
+      <Route path={"/"} element={<ItemListContainer />} />
+      <Route path={"/category/:id"} element={<ItemListContainer />} />
+      <Route path={"/item/:id"} element={<ItemDetailContainer />} />
+    </Routes>
+    <Cards />
+    <Footer />
+    </BrowserRouter>
+    
   );
 };
 

@@ -1,9 +1,8 @@
 import { useState } from "react";
-import ItemCount from "./ItemCount";
 import arrayProductos from "./json/productos.json";
 import ItemList from "./ItemList";
 import { useEffect } from "react";
-import ItemDetailContainer from "./ItemDetailContainer";
+import Carousel from "./Carousel";
 
 const ItemListContainer = () => {
   const [items, setItems] = useState([]);
@@ -22,9 +21,8 @@ const ItemListContainer = () => {
 
   return (
     <>
+      <Carousel/>
       <ItemList items={items} />
-      <ItemCount stock={10} />
-      <ItemDetailContainer/>
     </>
   );
 };
