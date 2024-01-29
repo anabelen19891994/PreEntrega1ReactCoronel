@@ -10,8 +10,6 @@ const App = () => {
   return (
     <BrowserRouter>
       <Header />
-
-      <ItemListContainer />
       <Routes>
         <Route path={"/"} element={<ItemListContainer />} />
         <Route path={"/category/:id"} element={<ItemListContainer />} />
