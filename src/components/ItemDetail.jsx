@@ -1,21 +1,21 @@
-const ItemDetail = ({item}) => {
-    return (
-        <div className="container">
-            <div className="row">
-                <div className="col-md-4 offset-md-2">
-                    <img src={item.image} alt={item.title} className="img-fluid" />
+import ItemCount from "./ItemCount";
 
-                </div>
-                <div className="col-md-4">
-                    <h1>{item.title}</h1>
-                    <p>{item.description}</p>
-                    <p>{item.price}</p>
-
-                </div>
-            </div>
+const ItemDetail = ({ item }) => {
+  return (
+    <div className="container">
+      <div className="row">
+        <div className="col-md-5 offset-md-1 text-center">
+          <img src={item.image} alt={item.title} className="img-fluid" />
         </div>
-
-    )
-}
+        <div className="col-md-5">
+          <h1>{item.title}</h1>
+          <p>{item.description}</p>
+          <p>{item.price}</p>
+          <ItemCount stock={item.stock} />
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default ItemDetail;

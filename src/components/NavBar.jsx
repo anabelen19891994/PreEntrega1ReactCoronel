@@ -7,27 +7,47 @@ const NavBar = () => {
       <div className="col-md-10 d-flex align-items-center">
         <ul className="nav bg-success">
           <li className="nav-item">
-            <NavLink className="nav-link text-dark fs-5" to={"/"}>
+            <NavLink
+              className="nav-link text-dark fs-5"
+              activeclassname="active"
+              to={"/"}
+            >
               Productos
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav-link text-dark fs-5" to={"/category/camas"}>
+            <NavLink
+              className="nav-link text-dark fs-5"
+              activeclassname="active"
+              to={"/category/camas"}
+            >
               Camas
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav-link text-dark fs-5" to={"/category/camas"}>
+            <NavLink
+              className="nav-link text-dark fs-5"
+              activeclassname="active"
+              to={"/category/platos"}
+            >
               Platos
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav-link text-dark fs-5" to={"/category/camas"}>
+            <NavLink
+              className="nav-link text-dark fs-5"
+              activeclassname="active"
+              to={"/category/correas"}
+            >
               Correas
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav-link text-dark fs-5" to={"/category/camas"}>
+            <NavLink
+              className="nav-link text-dark fs-5"
+              activeclassname="active"
+              to={"/category/dispenser"}
+            >
               Dispenser
             </NavLink>
           </li>

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const ItemCount = ({ stock }) => {
   const [counter, setCounter] = useState(1);
@@ -29,10 +29,14 @@ const ItemCount = ({ stock }) => {
     }
   };
 
+  useEffect(() => {
+    setItemStock(stock);
+  }, [stock]);
+
   return (
     <>
       <div className="row my-1">
-        <div className="col-md-2">
+        <div className="col-md-4">
           <div className="btn-group" role="group" aria-label="Basic example">
             <button
               type="button"
@@ -55,7 +59,7 @@ const ItemCount = ({ stock }) => {
         </div>
       </div>
       <div className="row my-1">
-        <div className="col-md-2">
+        <div className="col-md-4">
           <button type="button" className="btn btn-success" onClick={onAdd}>
             Agregar al Carrito
           </button>
