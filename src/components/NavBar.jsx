@@ -3,9 +3,10 @@ import CartWidget from "./CartWidget";
 
 const NavBar = () => {
   return (
-    <div className="row">
-      <div className="col-md-10 d-flex align-items-center">
-        <ul className="nav bg-success">
+    <div className="container my-3">
+            <div className="row">
+                <div className="col-md-10 d-flex align-items-center">
+        <ul className="nav">
           <li className="nav-item">
             <NavLink
               className="nav-link text-dark fs-5"
@@ -52,9 +53,12 @@ const NavBar = () => {
             </NavLink>
           </li>
         </ul>
+        </div>
+        <div className="col-md-1 d-flex align-items-center justify-content-end">
         <CartWidget />
       </div>
     </div>
+  </div>
   );
 };
 

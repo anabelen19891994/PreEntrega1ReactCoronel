@@ -8,7 +8,7 @@ const Header = () => {
         <div className="col-md-2">
           <LogoPelitos />
         </div>
-        <div className="col-md-11 d-flex align-items-center">
+        <div className="col-md-9 d-flex text-center">
           <NavBar />
         </div>
       </div>
