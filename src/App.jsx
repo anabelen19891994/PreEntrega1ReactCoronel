@@ -12,19 +12,19 @@ import Checkout from "./components/Checkout";
 const App = () => {
   return (
     <CartContextProvider>
-    <BrowserRouter>
-      <Header />
-      <Routes>
-        <Route path={"/"} element={<ItemListContainer />} />
-        <Route path={"/category/:id"} element={<ItemListContainer />} />
-        <Route path={"/item/:id"} element={<ItemDetailContainer />} />
-        <Route path={"/cart"} element={<Cart />} />
-        <Route path={"/checkout"} element={<Checkout />} />
-        <Route path={"*"} element={<Error404 />} />
-      </Routes>
-      <Cards />
-      <Footer />
-    </BrowserRouter>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path={"/"} element={<ItemListContainer />} />
+          <Route path={"/category/:id"} element={<ItemListContainer />} />
+          <Route path={"/item/:id"} element={<ItemDetailContainer />} />
+          <Route path={"/cart"} element={<Cart />} />
+          <Route path={"/checkout"} element={<Checkout />} />
+          <Route path={"*"} element={<Error404 />} />
+        </Routes>
+        <Cards />
+        <Footer />
+      </BrowserRouter>
     </CartContextProvider>
   );
 };

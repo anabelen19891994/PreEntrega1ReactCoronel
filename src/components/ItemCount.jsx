@@ -5,18 +5,18 @@ const ItemCount = ({ stock, onAdd }) => {
   const [counter, setCounter] = useState(1);
   const [itemStock, setItemStock] = useState(stock);
   const [itemAdded, setItemAdded] = useState(false);
-  
+
   const incrementar = () => {
     if (counter < itemStock) {
       setCounter(counter + 1);
     }
-  }
+  };
 
   const decrementar = () => {
     if (counter > 1) {
       setCounter(counter - 1);
     }
-  }
+  };
 
   const addToCart = () => {
     if (counter <= itemStock) {
@@ -24,13 +24,6 @@ const ItemCount = ({ stock, onAdd }) => {
       setCounter(1);
       onAdd(counter);
       setItemAdded(true);
-      // console.log(
-      //   "Agregaste " +
-      //     counter +
-      //     " productos al carrito. Quedan " +
-      //     (itemStock - counter) +
-      //     " productos disponibles."
-      // );
     }
   };
 
@@ -65,11 +58,19 @@ const ItemCount = ({ stock, onAdd }) => {
       </div>
       <div className="row my-1">
         <div className="col-md-5">
-          {itemAdded ? <Link to={"/cart"} className="btn btn-success">
-            Terminar mi compra
-          </Link> : <button type="button" className="btn btn-success" onClick={addToCart}>
-            Agregar al Carrito
-          </button>}
+          {itemAdded ? (
+            <Link to={"/cart"} className="btn btn-success">
+              Terminar mi compra
+            </Link>
+          ) : (
+            <button
+              type="button"
+              className="btn btn-success"
+              onClick={addToCart}
+            >
+              Agregar al Carrito
+            </button>
+          )}
         </div>
       </div>
     </>
