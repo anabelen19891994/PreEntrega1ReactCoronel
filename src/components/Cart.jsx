@@ -15,7 +15,7 @@ const Cart = () => {
             <div className="alert alert-danger" role="alert">
               No se encontraron productos en el carrito
             </div>
-            <Link to={"/"} className="btn btn-success my-5">
+            <Link to={"/"} className="btn text-bg-dark p-3">
               Volver a la página principal
             </Link>
           </div>
@@ -38,8 +38,8 @@ const Cart = () => {
             <tbody>
               <tr>
                 <td className="text-end align-middle" colSpan={6}>
-                  <a href="#" onClick={clear} className="btn btn-success">
-                    Vaciar carrito{" "}
+                  <a href="#" onClick={clear} className="btn text-bg-dark p-3">
+                    Vaciar carrito
                     <img
                       src={trash}
                       alt="Eliminar producto"
@@ -85,7 +85,7 @@ const Cart = () => {
                   ${SumaTotalProductos()}
                 </td>
                 <td className="text-end align-middle">
-                  <Link to={"/checkout"} className="btn btn-success">
+                  <Link to={"/checkout"} className="btn text-bg-dark p-3">
                     Checkout
                   </Link>
                 </td>

@@ -91,7 +91,7 @@ const Checkout = () => {
 
             <button
               type="button"
-              className="btn btn-success"
+              className="btn text-bg-dark"
               onClick={generarOrden}
             >
               Generar orden
@@ -131,7 +131,7 @@ const Checkout = () => {
       <div className="row my-5">
         <div className="col text-center">
           {orderId ? (
-            <div className="alert alert-success p-5 text-center" role="alert">
+            <div className="alert text-bg-dark p-5 text-center" role="alert">
               <h1>Gracias por tu compra!</h1>
               <p>
                 Tu ID de compra es: <b>{orderId}</b>

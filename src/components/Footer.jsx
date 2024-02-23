@@ -6,7 +6,7 @@ const Footer = () => {
           <ul className="nav text-bg-dark p-3">
             <li className="nav-item">
               <a className="nav-link text-light fs-5" href="#">
-                
+                FB
               </a>
             </li>
             <li className="nav-item">

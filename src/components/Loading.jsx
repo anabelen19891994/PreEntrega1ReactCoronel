@@ -3,7 +3,7 @@ const Loading = () => {
     <div className="container my-5">
       <div className="row">
         <div className="col text-center">
-          <div className="spinner-grow text-success" role="status">
+          <div className="spinner-grow text-bg-dark" role="status">
             <span className="visually-hidden">Cargando...</span>
           </div>
         </div>
