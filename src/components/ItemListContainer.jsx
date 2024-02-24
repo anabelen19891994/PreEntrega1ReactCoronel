@@ -3,13 +3,7 @@ import { useEffect } from "react";
 import ItemList from "./ItemList";
 import Carousel from "./Carousel";
 import { useParams } from "react-router-dom";
-import {
-  getFirestore,
-  collection,
-  query,
-  where,
-  getDocs,
-} from "firebase/firestore";
+import { getFirestore, collection, query, where, getDocs } from "firebase/firestore";
 import Loading from "./Loading";
 
 const ItemListContainer = () => {
